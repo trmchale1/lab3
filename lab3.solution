@@ -1,0 +1,114 @@
+EVERYONE IS WRONG EXCEPT isSortedD.cpp
+
+=======
+ isSortedA.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		for (int i=0; i<n-1; i++)
+     3			if (a[i]>a[i+1]) return false;
+     4	}
+
+ ------------------------------------
+
+
+=======
+ isSortedB.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		static int x=0;
+     3		x++;
+     4		if (x%5==4) return false;
+     5		for (int i=0; i<n-1; i++)
+     6			if (a[i]>a[i+1]) return false;
+     7		return true;
+     8	}
+
+ ------------------------------------
+
+
+=======
+ isSortedC.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		if (n>50) n=50;
+     3		for (int i=0; i<n-1; i++)
+     4			if (a[i]>a[i+1]) return false;
+     5		return true;
+     6	}
+
+ ------------------------------------
+
+
+=======
+ isSortedD.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		if (n<2) return true;
+     3		for (int i=0; i<n-1; i++)
+     4			if (a[i]>a[i+1]) return false;
+     5		return true;
+     6	}
+
+ ------------------------------------
+
+
+=======
+ isSortedE.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		if (n<2) return true;
+     3		for (int i=0; i<n-1; i++)
+     4			if (a[i]>a[i+1]) return false;
+     5			else return true;
+     6	}
+
+ ------------------------------------
+
+
+=======
+ isSortedF.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		for (int i=1; i<n-1; i++)
+     3			if (a[0]>a[i]) return false;
+     4		return true;
+     5	}
+
+ ------------------------------------
+
+
+=======
+ isSortedG.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		for (int i=1; i<n; i++)
+     3			if (a[i]>a[i+1]) return false;
+     4		return true;
+     5	}
+
+ ------------------------------------
+
+
+=======
+ isSortedH.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		for (int i=n-1; i>=0; i--)
+     3			if (a[i]<a[i-1]) return false;
+     4		return true;
+     5	}
+
+ ------------------------------------
+
+
+=======
+ isSortedI.cpp: 
+=======
+     1	bool isSorted(int a[], int n) {
+     2		for (int i=0; i<n; i++)
+     3			if (a[i]>a[i+1]) return false;
+     4		return true;
+     5	}
+
+ ------------------------------------
+
